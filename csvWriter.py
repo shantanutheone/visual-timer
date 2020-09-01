@@ -1,9 +1,12 @@
 import csv
 import time
+import pandas as pd
 
 def csvWriter(Info): # Writing in a CSV file
-    with open("result.csv", "a+") as csv_file:
+    with open("./database/result.csv", "a+") as csv_file:
         csv_writer = csv.writer(csv_file)
-        csv_writer.writerow([Info["Topic"], Info["SubTopic"], Info["startDate"], Info["endDate"], Info["startTime"], Info["endTime"], Info["Duration"]])
-        print("Writing Successful !!!!  Sleeping for 2 sec")
-        time.sleep(2)
+        csv_writer.writerow([Info["Topic"], Info["SubTopic"], Info["startDate"], Info["startTime"], Info["endTime"], Info["Hour"], Info["Minute"]])
+
+
+
+    
