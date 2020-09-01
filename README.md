@@ -17,8 +17,8 @@ Go to your command and type all these commands
 4. Select from Topic or create new one.
 <img src="./readme_images/select topic.png">
 
-5. Now Enter Subtopic and minutes you want your timer to remind you after interval.
-<img src="./readme_images/minute.png">
+5. Enter the subtopic.
+6. <img src="./readme_images/subtopic_enter.png">
 
 # Visualization
 0. Command to visualize following.
