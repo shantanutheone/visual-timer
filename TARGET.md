@@ -1,13 +1,13 @@
 # Interval-Timer
 ## Personal Agenda to Complete
 
-- [x] Add Real time to take from windows
+- [x] Add Real time to take from windows  (Added datetime)
 
-- [x] Rather than beep play time remaining
+- [x] Rather than beep play time remaining - Added (Time remaining feature)
 
-- [x] Select from current Topic or create a new topic
+- [x] Select from current Topic or create a new topic - (Added Pick Library)
 
-- [ ] Play Pause System
+- [ ] Play Pause System - (Learning Tkinter - Python GUI)  (--Pending)
 
 - [ ] Visualizing through matplot, seaborn
 
@@ -17,5 +17,8 @@
 
 - [ ] Replace playsound with ___________
 
+- [ ] Rather than result make a database (Just for your own compatibility)
+
+- [ ] Synchronize time to remove error in timing and playing sound (--there is no error actually)
 
  

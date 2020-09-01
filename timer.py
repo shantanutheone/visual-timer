@@ -5,9 +5,14 @@ from datetime import datetime
 def timer(counter,interval = 5):
     print(f"Playing {counter} beeps at the interval of {interval}")
     startTime = datetime.now()
-    for i in range(counter,0,-1):
+    for i in range(1, counter+1):
         time.sleep(interval)  # Sleep here for interval sec
-        playsound(f"./numbers-mp3/{i}.mp3") # Playing the remaining time
+        if(i%5):
+            playsound(f"./numbers-mp3/beep.mp3") # ELse play beep
+        elif(i%60==0):
+            playsound(f"./numbers-mp3/{i}.mp3")
+        else:
+            playsound(f"./numbers-mp3/{i%60}.mp3")
     endTime = datetime.now()
     
     

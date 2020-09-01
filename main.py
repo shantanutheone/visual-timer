@@ -1,7 +1,7 @@
+#Files importing
 import timer
 import csvWriter
 import picker
-from pick import pick
 
 while(True):
     # New thing [Using pip install pick && pip install windows-curse]
