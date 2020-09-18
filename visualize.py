@@ -8,7 +8,6 @@ import random
 import numpy as np
 from math import e
 import os
-from selenium import webdriver
 
 style.use("seaborn")
 
@@ -207,9 +206,9 @@ def challenge():
             _ver += (L[i]*2)/100
             Version.append(_ver/100)
     print("==VERSION==")
-    print("Previous : ","{:.2f}".format(Version[-2]))
-    print("Gained :","{:.2f}".format(Version[-1]-Version[-2]))
-    print("Current:","{:.2f}".format(Version[-1]))
+    print("Previous : ","{:.3f}".format(Version[-2]))
+    print("Gained :","{:.3f}".format(Version[-1]-Version[-2]))
+    print("Current:","{:.3f}".format(Version[-1]))
 
     plt.plot(Datewise["labelDate"],Version,"X:m")
     plt.xlabel("DATE",fontsize = 20,color = "red")
@@ -226,6 +225,8 @@ def totalTime():
     TodaysDuration = Datewise.iloc[-1]["Duration"]
     print(f"Today : {int(TodaysDuration//60)} hours {TodaysDuration%60} minutes")
     print()
+
+
 def html():
     url = "file://" + "C://Users/hp/desktop/visual-timer/html/stats.html"
     chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
